@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Outfit", sans-serif;
+  
+  /* Sleek Interface Theme Colors */
+  --color-primary: var(--color-indigo-600);
+  --color-primary-foreground: white;
+  
+  --color-sidebar: white;
+  --color-sidebar-border: var(--color-slate-200);
+  
+  --color-background: var(--color-slate-50);
+  --color-foreground: var(--color-slate-900);
+  
+  --color-card: white;
+  --color-card-foreground: var(--color-slate-900);
+  --color-card-border: var(--color-slate-200);
+  
+  --color-accent: var(--color-slate-100);
+  --color-accent-foreground: var(--color-indigo-600);
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-300 bg-background text-foreground;
+  }
+}
+
